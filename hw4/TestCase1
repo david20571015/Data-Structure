@@ -1,0 +1,22 @@
+# Testing Example 1
+
+# -----------------------------
+  BeginTest
+    AddOrder 66 1
+    AddOrder 41 2
+    AddOrder 19 3
+    AddOrder 31 4
+    DeleteOrders 10 40
+    AddOrder 18 5
+    AddOrder 21 6
+    AddOrder 14 7
+
+    SearchByDate 1 100
+    CheckCorrectness GoldenList YourList
+
+    SearchByDateRank 3 5
+	CheckCorrectness GoldenList YourList
+  EndTest
+# ----------------------------
+
+
